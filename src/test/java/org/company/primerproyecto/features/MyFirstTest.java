@@ -2,7 +2,7 @@ package org.company.primerproyecto.features;
 
 import org.company.primerproyecto.config.RedmineConfig;
 import org.company.primerproyecto.config.RedmineEndpoints;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.get;
 

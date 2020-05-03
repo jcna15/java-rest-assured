@@ -1,0 +1,150 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "project"
+  ],
+  "properties": {
+    "project": {
+      "$id": "#/properties/project",
+      "type": "object",
+      "title": "The Project Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "status": 1.0,
+          "id": 2.0,
+          "is_public": true,
+          "updated_on": "2020-04-20T02:47:07Z",
+          "description": "SecondProjectTest",
+          "name": "SecondProjectTest",
+          "inherit_members": false,
+          "homepage": "",
+          "identifier": "secondprojecttest",
+          "created_on": "2020-04-20T02:47:07Z"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "name",
+        "identifier",
+        "description",
+        "homepage",
+        "status",
+        "is_public",
+        "inherit_members",
+        "created_on",
+        "updated_on"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#/properties/project/properties/id",
+          "type": "integer",
+          "title": "The Id Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            2.0
+          ]
+        },
+        "name": {
+          "$id": "#/properties/project/properties/name",
+          "type": "string",
+          "title": "The Name Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "SecondProjectTest"
+          ]
+        },
+        "identifier": {
+          "$id": "#/properties/project/properties/identifier",
+          "type": "string",
+          "title": "The Identifier Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "secondprojecttest"
+          ]
+        },
+        "description": {
+          "$id": "#/properties/project/properties/description",
+          "type": "string",
+          "title": "The Description Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "SecondProjectTest"
+          ]
+        },
+        "homepage": {
+          "$id": "#/properties/project/properties/homepage",
+          "type": "string",
+          "title": "The Homepage Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "status": {
+          "$id": "#/properties/project/properties/status",
+          "type": "integer",
+          "title": "The Status Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        },
+        "is_public": {
+          "$id": "#/properties/project/properties/is_public",
+          "type": "boolean",
+          "title": "The Is_public Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            true
+          ]
+        },
+        "inherit_members": {
+          "$id": "#/properties/project/properties/inherit_members",
+          "type": "boolean",
+          "title": "The Inherit_members Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": false,
+          "examples": [
+            false
+          ]
+        },
+        "created_on": {
+          "$id": "#/properties/project/properties/created_on",
+          "type": "string",
+          "title": "The Created_on Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-20T02:47:07Z"
+          ]
+        },
+        "updated_on": {
+          "$id": "#/properties/project/properties/updated_on",
+          "type": "string",
+          "title": "The Updated_on Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-20T02:47:07Z"
+          ]
+        }
+      }
+    }
+  }
+}

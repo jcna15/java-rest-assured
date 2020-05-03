@@ -4,7 +4,7 @@ import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.company.primerproyecto.config.RedmineConfig;
 import org.company.primerproyecto.config.RedmineEndpoints;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.List;
 

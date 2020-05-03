@@ -9,4 +9,9 @@ public interface RedmineEndpoints {
 
     String SINGLE_REDMINE_ISSUE_JSON = "issues/{id}.json";
     String SINGLE_REDMINE_ISSUE_XML = "issues/{id}.xml";
+
+    String SINGLE_REDMINE_PROJECT_JSON = "projects/{id}.json";
+    String SINGLE_REDMINE_PROJECT_XML = "projects/{id}.xml";
+
+    String ALL_REDMINE_PROJECT_JSON = "projects.json";
 }

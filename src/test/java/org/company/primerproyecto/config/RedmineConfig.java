@@ -7,7 +7,8 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import org.junit.BeforeClass;
+//import org.junit.BeforeClass;
+import org.junit.jupiter.api.BeforeAll;
 //import org.junit.jupiter.api.BeforeAll;
 
 public class RedmineConfig {
@@ -15,7 +16,7 @@ public class RedmineConfig {
     public static RequestSpecification requestSpecification;
     public static ResponseSpecification responseSpecification;
 
-    @BeforeClass
+    @BeforeAll
     public static void setup(){
         requestSpecification = new RequestSpecBuilder()
                 .setBaseUri("http://CESAR-PC")
